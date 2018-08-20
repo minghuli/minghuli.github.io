@@ -12,8 +12,8 @@ export default class Meteor {
         this.x = x;
         this.y = 0;
         this.h = h;
-        this.r = Math.random() * 100 + 500;
-        this.vx = -(Math.random() * 4 + 2);
+        this.r = Math.random() * 100 + 300;
+        this.vx = -(Math.random() * 4 + 4);
         this.vy = -this.vx;
     }
 

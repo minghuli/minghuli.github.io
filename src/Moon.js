@@ -15,17 +15,17 @@
 
     drow() {
         const ctx = this.ctx;
-        const gradient = ctx.createRadialGradient(150, 150, 60, 150, 150, 800)
+        const gradient = ctx.createRadialGradient(150, 150, 80, 150, 150, 800)
             gradient.addColorStop(0, 'rgb(255, 255, 255)');
-            gradient.addColorStop(0.01, 'rgb(91, 125, 164)');
-            gradient.addColorStop(0.2, 'rgb(27, 74, 127)');
+            gradient.addColorStop(0.01, 'rgba(255, 255, 255, .6)');
+            gradient.addColorStop(0.02, 'rgb(6, 61, 126)');
             
             // gradient.addColorStop(0.01, 'rgb(70, 70, 80)');
             // gradient.addColorStop(0.2, 'rgb(40,40,50)');
             // gradient.addColorStop(0.4, 'rgb(20,20,30)');
             // gradient.addColorStop(1, 'rgb(0,0,10)');
 
-            gradient.addColorStop(0.4, 'rgb(1, 42, 88)');
+            // gradient.addColorStop(0.4, 'rgb(1, 42, 88)');
             gradient.addColorStop(1, 'rgb(2, 30, 67)');
 
         ctx.save();
