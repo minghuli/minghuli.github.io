@@ -1,9 +1,8 @@
-import Stars    from './Stars';
+import Stars    from '../Stars';
 import Moon     from './Moon';
 import Meteor   from './Meteor';
-import Words    from './Words';
 
-export default class Scene {
+export default class Sky {
 
     constructor() {
         this.canvas = document.getElementById('canvas');
@@ -42,13 +41,10 @@ export default class Scene {
                 this.meteors.push(new Meteor(this.context, mx, this.height));
             }
 
-            this.timer = requestAnimationFrame(frame);
+            this.timer = window.requestAnimationFrame(frame);
         }
         frame();
     }
 
 }
 
-//初始化
-const scene = new Scene();
-scene.init();
